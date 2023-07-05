@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS Files/quiz_style.css">
+    <title>Aptitude Quiz</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>SYED</span> Learning</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger">
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="../index.html" data-after="Home">Home</a></li>
+                <li><a href="../index.html#services" data-after="Courses">Courses</a></li>
+                <li><a href="../index.html#projects" data-after="Projects">Quiz</a></li>
+                <li><a href="../index.html#contact" data-after="Contact">Contact</a></li>
+                <li><a href="../HTML Files/login.html" data-after="Login">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="home-box custom-box">
+        <h3>Instruction:</h3>
+        <ol style="color: antiquewhite;font-size: x-large; ">
+          <li>There are 10 questions in this quiz</li>
+          <li>Try to attempt all and score maximum</li>
+          <li>Once you clicked on options , your answer will be displayed at bottom whether it is correct or wrong </li>
+          <li>Best of luck</li>
+        </ol>
+        <br>
+        <p>Total Number of questions: 10</p>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="question-number"></div>
+        <div class="question-text"> </div>
+        <div class="option-container">
+            
+        </div>
+        <div class="next-btn">
+            <button type="button" class="btn" onclick="next()">Next</button:button>
+        </div>
+        <div class="answers-indicator">
+            
+        </div>
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Attempted</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span class="total-percent"></span></td>
+            </tr>
+            <tr>
+                <td>Total Score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+        <button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+    </div>
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>SYED</span> Learning</h1>
+        </div>
+        <h2>One Solution for many Problems</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          </div>
+        </div>
+        <p>Copyright © 2022 saleemsyed815. All rights reserved</p>
+      </div>
+    </section>
+
+    <script src="../quiz_JS FILES/quiz_app_aptitude.js"></script>
+    <script src="../quiz_JS FILES/quiz_aptitude.js"></script>
+</body>
+</html>

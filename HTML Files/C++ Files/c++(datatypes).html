@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS Files/C++/c++(datatypes).css">
+    <title>C++ - Datatypes</title>
+</head>
+<body>
+    <!-- Header -->
+  <section id="header" style="background-color:black">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>SYED</span> Learning</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="../../index.html" data-after="Home">Home</a></li>
+            <li><a href="../../index.html#services" data-after="Courses">Courses</a></li>
+            <li><a href="../../index.html#projects" data-after="Projects">Quiz</a></li>
+            <li><a href="../../index.html#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#" data-after="Login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul> 
+        <li><a href="../C++ Files/c++(syntax).html" class="v2"><p>Syntax</p></a></li>
+        <li><a href="../C++ Files/c++(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../C++ Files/c++(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../C++ Files/c++(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../C++ Files/c++(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../C++ Files/c++(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../C++ Files/c++(pointers).html" class="v2"><p>Pointers</p></a></li>
+        <li><a href="../C++ Files/c++(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../C++ Files/c++(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../C++ Files/c++(const).html" class="v2"><p>Constructor</p></a></li>
+        <li><a href="../C++ Files/c++(inherit).html" class="v2"><p>Inheritance</p></a></li>
+        <li><a href="../C++ Files/c++(poly).html" class="v2"><p>Polymorphism</p></a></li>
+        <li><a href="../C++ Files/c++(encap).html" class="v2"><p>Encapsulation</p></a></li>
+        <li><a href="../C++ Files/c++(files).html" class="v2"><p>Files & Exceptions</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">Datatypes <span>(and variables)</span></h1>
+      <br><br>
+      <p>Before looking into datatypes in C++, we will first see what a variable is. <br><br>
+
+        Variables are containers for storing data values.<br>
+        In C++, there are different types of variables (defined with different keywords)<br><br>
+        1. int - stores integers (whole numbers), without decimals, such as 123 or -123 <br>
+        2. double - stores floating point numbers, with decimals, such as 19.99 or -19.99<br>       
+        3. char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes <br>
+        4. string - stores text, such as "Hello World". String values are surrounded by double quotes<br>
+        5. bool - stores values with two states: true or false<br><br>
+
+        Declaring (Creating) Variables <br>
+        To create a variable, specify the type and assign it a value: <br>
+
+        <textarea name="var" id="allvar" cols="80" rows="6">
+          int myNum = 5;               // Integer (whole number without decimals) 
+          double myFloatNum = 5.99;    // Floating point number (with decimals) 
+          char myLetter = 'D';         // Character 
+          string myText = "Hello";     // String (text) 
+          bool myBoolean = true;       // Boolean (true or false) 
+        </textarea> 
+        <br><br>
+        Display Variables <br>
+        The cout object is used together with the << operator to display variables. <br>
+        To combine both text and a variable, separate them with the << operator <br>
+        <textarea name="var1" id="allvar1" cols="50" rows="3">
+          int myAge = 35;
+          cout << "I am " << myAge << " years old.";
+        </textarea>
+        <br><br>
+        C++ User Input <br>
+        cin is a predefined variable that reads data from the keyboard with the extraction operator (>>). <br>
+        In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x: <br>
+        <textarea name="var2" id="allvar2"cols="70" rows="5">
+          int x; 
+          cout << "Type a number: "; // Type a number and press enter
+          cin >> x; // Get user input from the keyboard
+          cout << "Your number is: " << x; // Display the input value
+        </textarea> 
+      </p>
+      <br><br>
+      <button class="nextbutton"><a href="../C++ Files/c++(syntax).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../C++ Files/c++(operators).html">Next Topic</a></button>
+  </div>
+
+</div>
+    <!-- End Columns -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>SYED</span> Learning</h1>
+        </div>
+        <h2>One Solution for many Problems</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          </div>
+        </div>
+        <p>Copyright © 2022 saleemsyed815. All rights reserved</p>
+      </div>
+    </section>
+  <script src="../../JS Files/js.js"></script>
+</body>
+</html>

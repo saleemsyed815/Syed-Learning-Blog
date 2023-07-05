@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS Files/C++/c++(conditionals).css">
+    <title>C++ - Conditionals</title>
+</head>
+<body>
+    <!-- Header -->
+  <section id="header" style="background-color:black">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>SYED</span> Learning</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="../../index.html" data-after="Home">Home</a></li>
+            <li><a href="../../index.html#services" data-after="Courses">Courses</a></li>
+            <li><a href="../../index.html#projects" data-after="Projects">Quiz</a></li>
+            <li><a href="../../index.html#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#" data-after="Login">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul> 
+        <li><a href="../C++ Files/c++(syntax).html" class="v2"><p>Syntax</p></a></li>
+        <li><a href="../C++ Files/c++(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../C++ Files/c++(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../C++ Files/c++(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../C++ Files/c++(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../C++ Files/c++(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../C++ Files/c++(pointers).html" class="v2"><p>Pointers</p></a></li>
+        <li><a href="../C++ Files/c++(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../C++ Files/c++(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../C++ Files/c++(const).html" class="v2"><p>Constructor</p></a></li>
+        <li><a href="../C++ Files/c++(inherit).html" class="v2"><p>Inheritance</p></a></li>
+        <li><a href="../C++ Files/c++(poly).html" class="v2"><p>Polymorphism</p></a></li>
+        <li><a href="../C++ Files/c++(encap).html" class="v2"><p>Encapsulation</p></a></li>
+        <li><a href="../C++ Files/c++(files).html" class="v2"><p>Files & Exceptions</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">Conditional Statements</h1>
+      <br><br>
+      <p>Using different relational and logical operators, <br>
+        we can perform different actions for different decisions. <br><br>
+
+        C++ has the following conditional statements: <br>
+        1. Use 'if' to specify a block of code to be executed, if a specified condition is true <br>
+        2. Use 'else' to specify a block of code to be executed, if the same condition is false <br>
+        3. Use 'else if' to specify a new condition to test, if the first condition is false <br>
+        4. Use 'switch' to specify many alternative blocks of code to be executed <br><br>
+        
+        Simple 'if':- <br>
+        Syntax:- <br>
+        <textarea name="ifc" id="ifc" cols="90" rows="4">
+            if (condition) {
+                // block of code to be executed if the condition is true
+              }
+        </textarea>
+        <br>
+        Example:- <br>
+        <textarea name="ifx" id="ifx" cols="90" rows="7">
+            int x = 20;
+            int y = 18;
+            if (x > y) {
+                cout << "x is greater than y";
+            }
+        </textarea> <br>
+        Example explained <br>
+        In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator). <br>
+        As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y". <br>
+        <br> <br>
+        if...else:- <br>
+        Syntax:- <br>
+        <textarea name="ifc" id="ifc" cols="80" rows="7">
+            if (condition) {
+                // block of code to be executed if the condition is true
+              } else {
+                // block of code to be executed if the condition is false
+              }
+        </textarea>
+        <br>
+        Example:- <br>
+        <textarea name="ifx" id="ifx" cols="90" rows="8">
+            int time = 20;
+            if (time < 18) {
+                cout << "Good day.";
+            } else {
+                cout << "Good evening.";
+            }
+            // Outputs "Good evening."
+        </textarea> <br>
+        Example explained <br>
+        In the example above, time (20) is greater than 18, so the condition is false. <br>
+        Because of this, we move on to the else condition and print to the screen "Good evening". <br>
+        If the time was less than 18, the program would print "Good day". <br>
+        <br><br>
+        else...if:- <br>
+        Syntax:- <br>
+        <textarea name="ifc" id="ifc" cols="100" rows="8">
+            if (condition1) {
+                // block of code to be executed if condition1 is true
+              } else if (condition2) {
+                // block of code to be executed if the condition1 is false and condition2 is true
+              } else {
+                // block of code to be executed if the condition1 is false and condition2 is false
+              }
+        </textarea>
+        <br>
+        Example:- <br>
+        <textarea name="ifx" id="ifx" cols="90" rows="8">
+            int time = 22;
+            if (time < 10) {
+                cout << "Good morning.";
+            } else if (time < 20) {
+                cout << "Good day.";
+            } else {
+                cout << "Good evening.";
+            }
+            // Outputs "Good evening."
+        </textarea> <br>
+        Example explained <br>
+        In the example above, time (22) is greater than 10, so the condition is false. <br>
+        The next condition, in the else if statement, is also false, <br>
+        so we move on to the else condition since condition1 and condition2 is both false
+        <br> and print to the screen "Good evening". <br>
+        <br><br>
+
+        Short Hand if...else (Ternary Operator):- <br>
+        Syntax:- <br>
+        <textarea name="ifc" id="ifc" cols="90" rows="2">
+            variable = (condition) ? expressionTrue : expressionFalse;
+        </textarea>
+        <br>
+        Example:- <br>
+        The if...else example can be simply written as <br>
+        <textarea name="ifx" id="ifx" cols="90" rows="4">
+            int time = 20;
+            string result = (time < 18) ? "Good day." : "Good evening.";
+            cout << result;
+        </textarea> <br>
+        <br><br>
+        switch-case:- <br>
+        Syntax:- <br>
+        <textarea name="ifx" id="ifx" cols="90" rows="8">
+            switch(expression) {
+                case x:
+                  // code block
+                  break;
+                case y:
+                  // code block
+                  break;
+                default:
+                  // code block
+              }
+        </textarea> <br> 
+        This is how it works: <br>
+        The switch expression is evaluated once <br>
+        The value of the expression is compared with the values of each case <br>
+        If there is a match, the associated block of code is executed <br>
+        <br>
+        break and default keywords:- <br>
+        When C++ reaches a break keyword, it breaks out of the switch block. <br>
+        This will stop the execution (thus saving time) of more code and case testing inside the block. <br>
+        When a match is found, and the job is done, it's time for a break. There is no need for more testing. <br>
+        The default keyword specifies some code to run if there is no case match. <br>
+        The default keyword must be used as the last statement in the switch, and it does not need a break. <br>
+      </p>
+      <br><br>
+      <button class="nextbutton"><a href="../C++ Files/c++(operators).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../C++ Files/c++(looping).html">Next Topic</a></button>
+        
+  </div>
+</div>
+    <!-- End Columns -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>SYED</span> Learning</h1>
+        </div>
+        <h2>One Solution for many Problems</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          </div>
+        </div>
+        <p>Copyright © 2022 saleemsyed815. All rights reserved</p>
+      </div>
+    </section>
+  <script src="../../Files/js.js"></script>
+</body>
+</html>
